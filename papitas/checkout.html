@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+   <html lang="es">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+      <link rel="stylesheet" href="./assets/css/styles.css">
+      <title>Papitas</title>
+   </head>
+   <body>
+
+      <!-- HEADER -->
+      <header class="header" id="header">
+
+         <!-- Nav -->
+         <nav class="nav container">
+            <a href="#" class="nav__logo">PAPITAS</a>
+
+            <!-- Nav menu -->
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="./index.html#home" class="nav__link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="./index.html#favorites" class="nav__link">Favoritos</a>
+                  </li>
+
+                  <li>
+                     <a href="./index.html#brands" class="nav__link">Marcas</a>
+                  </li>
+
+                  <li>
+                     <a href="#products" class="nav__link active-link">Productos</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__link">Contacto</a>
+                  </li>
+               </ul>
+
+               <!-- Close button -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+
+               <!-- Social -->
+               <div class="nav__social">
+                  <a href="https://www.facebook.com" target="_blank" class="nav__social-link">
+                     <i class="ri-facebook-circle-line"></i>
+                  </a>
+
+                  <a href="https://www.instagram.com" target="_blank" class="nav__social-link">
+                     <i class="ri-instagram-line"></i>
+                  </a>
+
+                  <a href="https://www.twitter.com" target="_blank" class="nav__social-link">
+                     <i class="ri-twitter-x-line"></i>
+                  </a>
+               </div>
+            </div>
+
+            <!-- Nav toggle -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-apps-2-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!-- MAIN -->
+      <main class="main">
+         <section class="section">
+            <h2 class="section__title">Formulario de Despacho</h2>
+            <form id="dispatchForm">
+               <div class="form-group">
+                  <label for="name">Nombre</label>
+                  <input type="text" id="name" name="name" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="address">Dirección</label>
+                  <input type="text" id="address" name="address" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="city">Ciudad</label>
+                  <input type="text" id="city" name="city" required>
+               </div>
+
+               <div class="form-group">
+                  <label for="postalCode">Código Postal</label>
+                  <input type="text" id="postalCode" name="postalCode" required>
+               </div>
+               
+               <button type="submit" class="button">Confirmar</button>
+            </form>
+         </section>
+      </main>
+
+      <!-- Confirm modal -->
+      <div id="confirmationModal" class="modal">
+         <div class="modal-content">
+            <p>¡Su compra ya está en camino!</p>
+         </div>
+      </div>
+
+
+      <!-- FOOTER -->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <a href="#" class="footer__logo">PAPITAS</a>
+
+            <!-- Footer rights -->
+            <div class="footer__content grid">
+               <a href="#" class="footer__link">Términos y Condiciones</a>
+               <a href="#" class="footer__link">Política de Privacidad</a>
+
+               <span class="footer__copy">
+                  &#169; Derechos Reservados by <a href="#" class="footer__link">DanipaBernales</a>
+               </span>
+            </div>
+         </div>
+      </footer>
+
+      <!-- Scroll up -->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!-- JQuery -->
+      <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+      <!-- Main JS -->
+      <script src="./assets/js/main.js"></script>
+   </body>
+</html>
